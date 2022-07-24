@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.akbar.department.DepartmentServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 58.126 s - in com.akbar.department.DepartmentServiceApplicationTests

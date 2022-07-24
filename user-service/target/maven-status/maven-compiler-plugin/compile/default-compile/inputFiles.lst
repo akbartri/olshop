@@ -1,0 +1,10 @@
+/Users/baaws/microservice/java/olshop/olshop/user-service/src/main/java/com/akbar/user/UserServiceApplication.java
+/Users/baaws/microservice/java/olshop/olshop/user-service/src/main/java/com/akbar/user/dto/UserWithDepartmentDTO.java
+/Users/baaws/microservice/java/olshop/olshop/user-service/src/main/java/com/akbar/user/dto/DepartmentDTO.java
+/Users/baaws/microservice/java/olshop/olshop/user-service/src/main/java/com/akbar/user/dto/ResponseDTO.java
+/Users/baaws/microservice/java/olshop/olshop/user-service/src/main/java/com/akbar/user/dto/UserDTO.java
+/Users/baaws/microservice/java/olshop/olshop/user-service/src/main/java/com/akbar/user/service/UserServiceImpl.java
+/Users/baaws/microservice/java/olshop/olshop/user-service/src/main/java/com/akbar/user/entity/User.java
+/Users/baaws/microservice/java/olshop/olshop/user-service/src/main/java/com/akbar/user/service/UserService.java
+/Users/baaws/microservice/java/olshop/olshop/user-service/src/main/java/com/akbar/user/controller/UserController.java
+/Users/baaws/microservice/java/olshop/olshop/user-service/src/main/java/com/akbar/user/repository/UserRepository.java

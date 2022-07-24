@@ -1,0 +1,12 @@
+com/akbar/gateway/exception/JWTTokenMalformedException.class
+com/akbar/gateway/config/AuthenticationFilter.class
+com/akbar/gateway/config/RouterValidator.class
+com/akbar/gateway/config/GatewayConfig.class
+com/akbar/gateway/GatewayServiceApplication.class
+com/akbar/gateway/exception/JWTTokenMissingException.class
+com/akbar/gateway/config/JWTUtil.class
+com/akbar/gateway/dto/UserDto$UserDtoBuilder.class
+com/akbar/gateway/config/WebClientConfig.class
+com/akbar/gateway/config/AuthFilter$Config.class
+com/akbar/gateway/dto/UserDto.class
+com/akbar/gateway/config/AuthFilter.class

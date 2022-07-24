@@ -1,0 +1,44 @@
+version: '3.7'
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: 'always'
+    volumes: 
+      - maria-db:/var/lib/mysql/data
+      - ./init/maria:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_DATABASE: 'user'
+      MYSQL_USER: 'mariauser'
+      MYSQL_PASSWORD: 'mariapassword'
+    ports:
+      - '13306:3306'
+    expose:
+      - '13306'
+  mysqldb:
+    image: mysql:5.7
+    container_name: mysqldb
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'olshopmysql'
+      MYSQL_USER: 'mysqluser'
+      MYSQL_PASSWORD: 'mysqlpassword'
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - '3307:3306'
+    expose:
+      - '3307'
+    volumes:
+      - mysql-db:/var/lib/mysql
+      - ./init/mysql:/docker-entrypoint-initdb.d
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - '9411:9411'
+    expose:
+      - '9411'
+volumes:
+  mysql-db:
+  maria-db:

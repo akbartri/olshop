@@ -1,0 +1,10 @@
+/Users/baaws/microservice/java/olshop/olshop/gateway-service/src/main/java/com/akbar/gateway/config/AuthenticationFilter.java
+/Users/baaws/microservice/java/olshop/olshop/gateway-service/src/main/java/com/akbar/gateway/exception/JWTTokenMissingException.java
+/Users/baaws/microservice/java/olshop/olshop/gateway-service/src/main/java/com/akbar/gateway/config/WebClientConfig.java
+/Users/baaws/microservice/java/olshop/olshop/gateway-service/src/main/java/com/akbar/gateway/config/JWTUtil.java
+/Users/baaws/microservice/java/olshop/olshop/gateway-service/src/main/java/com/akbar/gateway/config/RouterValidator.java
+/Users/baaws/microservice/java/olshop/olshop/gateway-service/src/main/java/com/akbar/gateway/exception/JWTTokenMalformedException.java
+/Users/baaws/microservice/java/olshop/olshop/gateway-service/src/main/java/com/akbar/gateway/config/GatewayConfig.java
+/Users/baaws/microservice/java/olshop/olshop/gateway-service/src/main/java/com/akbar/gateway/config/AuthFilter.java
+/Users/baaws/microservice/java/olshop/olshop/gateway-service/src/main/java/com/akbar/gateway/GatewayServiceApplication.java
+/Users/baaws/microservice/java/olshop/olshop/gateway-service/src/main/java/com/akbar/gateway/dto/UserDto.java

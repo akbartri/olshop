@@ -1,0 +1,40 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: user-service
+#  datasource:
+#    username: user
+#    password: password
+#    url: jdbc:mysql://localhost:3307/olshop?serverTimeZone=Asia/Jakarta
+#    driver-class-name: com.mysql.jdbc.Driver
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    username: mariauser
+    password: mariapassword
+    url: jdbc:mariadb://localhost:13306/user?serverTimeZone=Asia/Jakarta
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDB103Dialect
+
+eureka:
+  instance:
+    preferIpAddress: true
+    hostname: eureka-0
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
