@@ -14,7 +14,7 @@ metadata:
   labels:
     app: eureka
 spec:
-  clusterIP: none
+  clusterIP: None
   selector:
     app: eureka
   ports:
@@ -38,6 +38,8 @@ spec:
       labels:
         app: eureka
     spec:
+      imagePullSecrets:
+        - name: docker-hub-cred
       containers:
         - name: eureka
           image: baaws/discovery-service:1.0

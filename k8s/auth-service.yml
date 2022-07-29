@@ -14,12 +14,23 @@ spec:
       labels:
         app: auth-service-app
     spec:
+      imagePullSecrets:
+        - name: docker-hub-cred
       containers:
         - name: auth-service-app
           image: baaws/auth-service:1.0
           imagePullPolicy: Always
           ports:
             - containerPort: 9003
+          env:
+            - name: DB_HOST
+              value: mariadb
+            - name: DB_NAME
+              value: auth
+            - name: DB_USERNAME
+              value: root
+            - name: DB_PASSWORD
+              value: root
 
 ---
 

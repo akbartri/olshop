@@ -14,12 +14,23 @@ spec:
       labels:
         app: department-service-app
     spec:
+      imagePullSecrets:
+        - name: docker-hub-cred
       containers:
         - name: department-service-app
           image: baaws/department-service:1.0
           imagePullPolicy: Always
           ports:
             - containerPort: 9001
+          env:
+            - name: DB_HOST
+              value: mysql
+            - name: DB_NAME
+              value: olshop
+            - name: DB_USERNAME
+              value: root
+            - name: DB_PASSWORD
+              value: root
 
 ---
 
@@ -31,5 +42,5 @@ spec:
   selector:
     app: department-service-app
   ports:
-    - port: 80
-      targetPort: 9001
+    - targetPort: 9001
+      port: 80

@@ -14,6 +14,8 @@ spec:
       labels:
         app: gateway-service-app
     spec:
+      imagePullSecrets:
+        - name: docker-hub-cred
       containers:
         - name: gateway-service-app
           image: baaws/gateway-service:1.0

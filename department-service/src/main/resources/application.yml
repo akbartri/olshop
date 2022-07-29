@@ -5,9 +5,9 @@ spring:
   application:
     name: department-service
   datasource:
-    username: user
-    password: password
-    url: jdbc:mysql://localhost:3307/olshop?serverTimeZone=Asia/Jakarta
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    url: jdbc:mysql://${DB_HOST}/${DB_NAME}?serverTimeZone=Asia/Jakarta&useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     show-sql: true

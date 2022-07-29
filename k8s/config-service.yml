@@ -14,6 +14,8 @@ spec:
       labels:
         app: config-service-app
     spec:
+      imagePullSecrets:
+        - name: docker-hub-cred
       containers:
         - name: config-service-app
           image: baaws/config-service:1.0
